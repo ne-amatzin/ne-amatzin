@@ -39,63 +39,99 @@ var lyr_Numeros_2 = new ol.layer.Image({
             imageExtent: [-9922743.071583, 1543529.112644, -9921928.310243, 1544159.887616]
         })
     });
-var format_Entregadas_3 = new ol.format.GeoJSON();
-var features_Entregadas_3 = format_Entregadas_3.readFeatures(json_Entregadas_3, 
+var format_Sector01_3 = new ol.format.GeoJSON();
+var features_Sector01_3 = format_Sector01_3.readFeatures(json_Sector01_3, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Entregadas_3 = new ol.source.Vector({
+var jsonSource_Sector01_3 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Entregadas_3.addFeatures(features_Entregadas_3);
-var lyr_Entregadas_3 = new ol.layer.Vector({
+jsonSource_Sector01_3.addFeatures(features_Sector01_3);
+var lyr_Sector01_3 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Entregadas_3, 
-                style: style_Entregadas_3,
+                source:jsonSource_Sector01_3, 
+                style: style_Sector01_3,
+                popuplayertitle: 'Sector 01',
+                interactive: true,
+                title: '<img src="styles/legend/Sector01_3.png" /> Sector 01'
+            });
+var format_Sector02_4 = new ol.format.GeoJSON();
+var features_Sector02_4 = format_Sector02_4.readFeatures(json_Sector02_4, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Sector02_4 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Sector02_4.addFeatures(features_Sector02_4);
+var lyr_Sector02_4 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Sector02_4, 
+                style: style_Sector02_4,
+                popuplayertitle: 'Sector 02',
+                interactive: true,
+                title: '<img src="styles/legend/Sector02_4.png" /> Sector 02'
+            });
+var format_Entregadas_5 = new ol.format.GeoJSON();
+var features_Entregadas_5 = format_Entregadas_5.readFeatures(json_Entregadas_5, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Entregadas_5 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Entregadas_5.addFeatures(features_Entregadas_5);
+var lyr_Entregadas_5 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Entregadas_5, 
+                style: style_Entregadas_5,
                 popuplayertitle: 'Entregadas',
                 interactive: true,
-                title: '<img src="styles/legend/Entregadas_3.png" /> Entregadas'
+                title: '<img src="styles/legend/Entregadas_5.png" /> Entregadas'
             });
-var format_Parciales_4 = new ol.format.GeoJSON();
-var features_Parciales_4 = format_Parciales_4.readFeatures(json_Parciales_4, 
+var format_Parciales_6 = new ol.format.GeoJSON();
+var features_Parciales_6 = format_Parciales_6.readFeatures(json_Parciales_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Parciales_4 = new ol.source.Vector({
+var jsonSource_Parciales_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Parciales_4.addFeatures(features_Parciales_4);
-var lyr_Parciales_4 = new ol.layer.Vector({
+jsonSource_Parciales_6.addFeatures(features_Parciales_6);
+var lyr_Parciales_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Parciales_4, 
-                style: style_Parciales_4,
+                source:jsonSource_Parciales_6, 
+                style: style_Parciales_6,
                 popuplayertitle: 'Parciales',
                 interactive: true,
-                title: '<img src="styles/legend/Parciales_4.png" /> Parciales'
+                title: '<img src="styles/legend/Parciales_6.png" /> Parciales'
             });
-var format_Renuncias_5 = new ol.format.GeoJSON();
-var features_Renuncias_5 = format_Renuncias_5.readFeatures(json_Renuncias_5, 
+var format_Renuncias_7 = new ol.format.GeoJSON();
+var features_Renuncias_7 = format_Renuncias_7.readFeatures(json_Renuncias_7, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Renuncias_5 = new ol.source.Vector({
+var jsonSource_Renuncias_7 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Renuncias_5.addFeatures(features_Renuncias_5);
-var lyr_Renuncias_5 = new ol.layer.Vector({
+jsonSource_Renuncias_7.addFeatures(features_Renuncias_7);
+var lyr_Renuncias_7 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Renuncias_5, 
-                style: style_Renuncias_5,
+                source:jsonSource_Renuncias_7, 
+                style: style_Renuncias_7,
                 popuplayertitle: 'Renuncias',
                 interactive: true,
-                title: '<img src="styles/legend/Renuncias_5.png" /> Renuncias'
+                title: '<img src="styles/legend/Renuncias_7.png" /> Renuncias'
             });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_MapafinalLaCampanera_1.setVisible(true);lyr_Numeros_2.setVisible(true);lyr_Entregadas_3.setVisible(true);lyr_Parciales_4.setVisible(true);lyr_Renuncias_5.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_MapafinalLaCampanera_1,lyr_Numeros_2,lyr_Entregadas_3,lyr_Parciales_4,lyr_Renuncias_5];
-lyr_Entregadas_3.set('fieldAliases', {'id': 'id', 'Otro': 'Otro', });
-lyr_Parciales_4.set('fieldAliases', {'id': 'id', });
-lyr_Renuncias_5.set('fieldAliases', {'id': 'id', });
-lyr_Entregadas_3.set('fieldImages', {'id': 'TextEdit', 'Otro': 'TextEdit', });
-lyr_Parciales_4.set('fieldImages', {'id': 'TextEdit', });
-lyr_Renuncias_5.set('fieldImages', {'id': 'TextEdit', });
-lyr_Entregadas_3.set('fieldLabels', {'id': 'no label', 'Otro': 'no label', });
-lyr_Parciales_4.set('fieldLabels', {'id': 'no label', });
-lyr_Renuncias_5.set('fieldLabels', {'id': 'no label', });
-lyr_Renuncias_5.on('precompose', function(evt) {
+lyr_OpenStreetMap_0.setVisible(true);lyr_MapafinalLaCampanera_1.setVisible(true);lyr_Numeros_2.setVisible(true);lyr_Sector01_3.setVisible(true);lyr_Sector02_4.setVisible(true);lyr_Entregadas_5.setVisible(true);lyr_Parciales_6.setVisible(true);lyr_Renuncias_7.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_MapafinalLaCampanera_1,lyr_Numeros_2,lyr_Sector01_3,lyr_Sector02_4,lyr_Entregadas_5,lyr_Parciales_6,lyr_Renuncias_7];
+lyr_Sector01_3.set('fieldAliases', {'fid': 'fid', });
+lyr_Sector02_4.set('fieldAliases', {'fid': 'fid', });
+lyr_Entregadas_5.set('fieldAliases', {'id': 'id', 'Otro': 'Otro', });
+lyr_Parciales_6.set('fieldAliases', {'id': 'id', });
+lyr_Renuncias_7.set('fieldAliases', {'id': 'id', });
+lyr_Sector01_3.set('fieldImages', {'fid': 'TextEdit', });
+lyr_Sector02_4.set('fieldImages', {'fid': 'TextEdit', });
+lyr_Entregadas_5.set('fieldImages', {'id': 'TextEdit', 'Otro': 'TextEdit', });
+lyr_Parciales_6.set('fieldImages', {'id': 'TextEdit', });
+lyr_Renuncias_7.set('fieldImages', {'id': 'TextEdit', });
+lyr_Sector01_3.set('fieldLabels', {'fid': 'no label', });
+lyr_Sector02_4.set('fieldLabels', {'fid': 'no label', });
+lyr_Entregadas_5.set('fieldLabels', {'id': 'no label', 'Otro': 'no label', });
+lyr_Parciales_6.set('fieldLabels', {'id': 'no label', });
+lyr_Renuncias_7.set('fieldLabels', {'id': 'no label', });
+lyr_Renuncias_7.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
