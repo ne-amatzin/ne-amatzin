@@ -131,7 +131,7 @@ lyr_Renuncias_5.set('fieldImages', {'id': 'TextEdit', });
 lyr_Areasdetrabajoyotros_6.set('fieldImages', {'Areas': 'TextEdit', });
 lyr_Areadeacopio_7.set('fieldImages', {'id': 'TextEdit', });
 lyr_Zonas_2.set('fieldLabels', {'fid': 'no label', });
-lyr_Entregadas_3.set('fieldLabels', {'id': 'no label', 'Otro': 'no label', });
+lyr_Entregadas_3.set('fieldLabels', {'id': 'inline label - visible with data', 'Otro': 'header label - always visible', });
 lyr_Parciales_4.set('fieldLabels', {'id': 'no label', });
 lyr_Renuncias_5.set('fieldLabels', {'id': 'no label', });
 lyr_Areasdetrabajoyotros_6.set('fieldLabels', {'Areas': 'no label', });
