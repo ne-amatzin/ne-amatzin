@@ -85,57 +85,75 @@ var lyr_Renuncias_5 = new ol.layer.Vector({
                 interactive: true,
                 title: '<img src="styles/legend/Renuncias_5.png" /> Renuncias'
             });
-var format_Areasdetrabajoyotros_6 = new ol.format.GeoJSON();
-var features_Areasdetrabajoyotros_6 = format_Areasdetrabajoyotros_6.readFeatures(json_Areasdetrabajoyotros_6, 
+var format_Proximas_6 = new ol.format.GeoJSON();
+var features_Proximas_6 = format_Proximas_6.readFeatures(json_Proximas_6, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Areasdetrabajoyotros_6 = new ol.source.Vector({
+var jsonSource_Proximas_6 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Areasdetrabajoyotros_6.addFeatures(features_Areasdetrabajoyotros_6);
-var lyr_Areasdetrabajoyotros_6 = new ol.layer.Vector({
+jsonSource_Proximas_6.addFeatures(features_Proximas_6);
+var lyr_Proximas_6 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Areasdetrabajoyotros_6, 
-                style: style_Areasdetrabajoyotros_6,
+                source:jsonSource_Proximas_6, 
+                style: style_Proximas_6,
+                popuplayertitle: 'Proximas',
+                interactive: true,
+                title: '<img src="styles/legend/Proximas_6.png" /> Proximas'
+            });
+var format_Areasdetrabajoyotros_7 = new ol.format.GeoJSON();
+var features_Areasdetrabajoyotros_7 = format_Areasdetrabajoyotros_7.readFeatures(json_Areasdetrabajoyotros_7, 
+            {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
+var jsonSource_Areasdetrabajoyotros_7 = new ol.source.Vector({
+    attributions: ' ',
+});
+jsonSource_Areasdetrabajoyotros_7.addFeatures(features_Areasdetrabajoyotros_7);
+var lyr_Areasdetrabajoyotros_7 = new ol.layer.Vector({
+                declutter: false,
+                source:jsonSource_Areasdetrabajoyotros_7, 
+                style: style_Areasdetrabajoyotros_7,
                 popuplayertitle: 'Areas de trabajo y otros',
                 interactive: true,
-                title: '<img src="styles/legend/Areasdetrabajoyotros_6.png" /> Areas de trabajo y otros'
+                title: '<img src="styles/legend/Areasdetrabajoyotros_7.png" /> Areas de trabajo y otros'
             });
-var format_Areadeacopio_7 = new ol.format.GeoJSON();
-var features_Areadeacopio_7 = format_Areadeacopio_7.readFeatures(json_Areadeacopio_7, 
+var format_Areadeacopio_8 = new ol.format.GeoJSON();
+var features_Areadeacopio_8 = format_Areadeacopio_8.readFeatures(json_Areadeacopio_8, 
             {dataProjection: 'EPSG:4326', featureProjection: 'EPSG:3857'});
-var jsonSource_Areadeacopio_7 = new ol.source.Vector({
+var jsonSource_Areadeacopio_8 = new ol.source.Vector({
     attributions: ' ',
 });
-jsonSource_Areadeacopio_7.addFeatures(features_Areadeacopio_7);
-var lyr_Areadeacopio_7 = new ol.layer.Vector({
+jsonSource_Areadeacopio_8.addFeatures(features_Areadeacopio_8);
+var lyr_Areadeacopio_8 = new ol.layer.Vector({
                 declutter: false,
-                source:jsonSource_Areadeacopio_7, 
-                style: style_Areadeacopio_7,
+                source:jsonSource_Areadeacopio_8, 
+                style: style_Areadeacopio_8,
                 popuplayertitle: 'Area de acopio  ',
                 interactive: true,
-                title: '<img src="styles/legend/Areadeacopio_7.png" /> Area de acopio  '
+                title: '<img src="styles/legend/Areadeacopio_8.png" /> Area de acopio  '
             });
 
-lyr_OpenStreetMap_0.setVisible(true);lyr_MapafinalLaCampanera_1.setVisible(true);lyr_Zonas_2.setVisible(true);lyr_Entregadas_3.setVisible(true);lyr_Parciales_4.setVisible(true);lyr_Renuncias_5.setVisible(true);lyr_Areasdetrabajoyotros_6.setVisible(true);lyr_Areadeacopio_7.setVisible(true);
-var layersList = [lyr_OpenStreetMap_0,lyr_MapafinalLaCampanera_1,lyr_Zonas_2,lyr_Entregadas_3,lyr_Parciales_4,lyr_Renuncias_5,lyr_Areasdetrabajoyotros_6,lyr_Areadeacopio_7];
+lyr_OpenStreetMap_0.setVisible(true);lyr_MapafinalLaCampanera_1.setVisible(true);lyr_Zonas_2.setVisible(true);lyr_Entregadas_3.setVisible(true);lyr_Parciales_4.setVisible(true);lyr_Renuncias_5.setVisible(true);lyr_Proximas_6.setVisible(true);lyr_Areasdetrabajoyotros_7.setVisible(true);lyr_Areadeacopio_8.setVisible(true);
+var layersList = [lyr_OpenStreetMap_0,lyr_MapafinalLaCampanera_1,lyr_Zonas_2,lyr_Entregadas_3,lyr_Parciales_4,lyr_Renuncias_5,lyr_Proximas_6,lyr_Areasdetrabajoyotros_7,lyr_Areadeacopio_8];
 lyr_Zonas_2.set('fieldAliases', {'fid': 'fid', });
 lyr_Entregadas_3.set('fieldAliases', {'id': 'id', 'Otro': 'Otro', });
 lyr_Parciales_4.set('fieldAliases', {'id': 'id', });
 lyr_Renuncias_5.set('fieldAliases', {'id': 'id', });
-lyr_Areasdetrabajoyotros_6.set('fieldAliases', {'Areas': 'Areas', });
-lyr_Areadeacopio_7.set('fieldAliases', {'id': 'id', });
+lyr_Proximas_6.set('fieldAliases', {'id': 'id', });
+lyr_Areasdetrabajoyotros_7.set('fieldAliases', {'Areas': 'Areas', });
+lyr_Areadeacopio_8.set('fieldAliases', {'id': 'id', });
 lyr_Zonas_2.set('fieldImages', {'fid': 'TextEdit', });
 lyr_Entregadas_3.set('fieldImages', {'id': 'TextEdit', 'Otro': 'TextEdit', });
 lyr_Parciales_4.set('fieldImages', {'id': 'TextEdit', });
 lyr_Renuncias_5.set('fieldImages', {'id': 'TextEdit', });
-lyr_Areasdetrabajoyotros_6.set('fieldImages', {'Areas': 'TextEdit', });
-lyr_Areadeacopio_7.set('fieldImages', {'id': 'TextEdit', });
+lyr_Proximas_6.set('fieldImages', {'id': 'TextEdit', });
+lyr_Areasdetrabajoyotros_7.set('fieldImages', {'Areas': 'TextEdit', });
+lyr_Areadeacopio_8.set('fieldImages', {'id': 'TextEdit', });
 lyr_Zonas_2.set('fieldLabels', {'fid': 'no label', });
-lyr_Entregadas_3.set('fieldLabels', {'id': 'inline label - visible with data', 'Otro': 'header label - always visible', });
+lyr_Entregadas_3.set('fieldLabels', {'id': 'inline label - visible with data', 'Otro': 'hidden field', });
 lyr_Parciales_4.set('fieldLabels', {'id': 'no label', });
 lyr_Renuncias_5.set('fieldLabels', {'id': 'no label', });
-lyr_Areasdetrabajoyotros_6.set('fieldLabels', {'Areas': 'no label', });
-lyr_Areadeacopio_7.set('fieldLabels', {'id': 'no label', });
-lyr_Areadeacopio_7.on('precompose', function(evt) {
+lyr_Proximas_6.set('fieldLabels', {'id': 'no label', });
+lyr_Areasdetrabajoyotros_7.set('fieldLabels', {'Areas': 'no label', });
+lyr_Areadeacopio_8.set('fieldLabels', {'id': 'no label', });
+lyr_Areadeacopio_8.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
 });
